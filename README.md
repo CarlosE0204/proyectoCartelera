@@ -140,7 +140,7 @@ En el dashboard se puede notar botones que estan direccionados a hacer ciertas a
 
 ![image](https://github.com/user-attachments/assets/c35aa2a4-0f1c-44cc-9ce6-204d6cbc3094)
 
-=============================================================================================
+============================================================================================
 ## Servicios
 #### En el archivo de servicios se realizan los métodos que se mandaran a llamar cuando se requiera de hacer una solicitud.
 #### se realizaron tanto para usuarios como para películas.
