@@ -10,24 +10,36 @@ En el dashboard se puede notar botones que estan direccionados a hacer ciertas a
 ##### El cual es validado con métodos que han sido creados en el typescript 
 ![image](https://github.com/user-attachments/assets/dbe52028-fe65-4edb-892f-dbcd61472611)
 ##### dentro dem método se validan los datos entrantes, hace un servicio HTTP en la cual una vez validado y que este registrado ingresara ala pantalla de home o pantalla principal en donde se presentara la información del usuario que inicio sesion, asi mismo los botones que servirán para acer acciones y una tabla en la que se visualizaran las películas.
+### -> Pantalla Login 
+![image](https://github.com/user-attachments/assets/09d76ce1-cf43-488f-ba56-05b09ad9f314)
+#### Validando usuario
+![image](https://github.com/user-attachments/assets/8d7e56a4-70a9-4226-93c0-1020a6e8ceb8)
+
+#### Una vez validado el usuario se dirige a la pantalla de home
+![image](https://github.com/user-attachments/assets/10e5336d-3d3f-41de-888e-c05519e07b83)
 
 ## Pantalla Principal
 
-#### Como inicio en la barra superior se muestran 2 datos las cuales son el nombre y su foto de perfil del usuario que ha sido loggeado. por tanto en el codigo que ve de la siguiente manera. 
+#### Como inicio en la barra superior se muestran 2 datos las cuales son el nombre y su foto de perfil del usuario que ha iniciado sesion. Por tanto en el codigo que ve de la siguiente manera. 
 
 ![image](https://github.com/user-attachments/assets/de9532a7-e751-4dcb-a950-9a4a8f361711)
 
 ##### En donde se hacen consultas a la API por medio de un servicio con el cual obtendremos el nombre y la foto de perfil. Además de mencionar que en la foto de perfil se pueden ver ciertas acciones que puede hacer un usuario las cuales son 
-##### * Mi perfil la cual tiene funcionalidad ya que en el typescript se realzia un métodoel cual tiene de nombre mi perfil la cual muestra con un dialog la información del usuario 
+![image](https://github.com/user-attachments/assets/de8c10d6-f6b8-4096-a49e-1c97698be0f6)
+
+#### * Mi perfil la cual tiene funcionalidad ya que en el typescript se realzia un método el cual tiene de nombre mi perfil la cual muestra con un dialog la información del usuario 
 ![image](https://github.com/user-attachments/assets/85ebec4d-6e87-48ea-a3bc-396d6fae861d)
+
+![image](https://github.com/user-attachments/assets/b2a80d5d-ae56-4e68-895c-a3965039934d)
 
 ##### En codigo el dialog se realizo de la siguiete manera.
 ![image](https://github.com/user-attachments/assets/c1e2006f-ddc3-4a3e-b232-09117e615ac1)
 
-##### * Eliminar perfil la cuales tiene función en el typescript  
+#### * Eliminar perfil la cuales tiene función en el typescript  
 ![image](https://github.com/user-attachments/assets/bb87fd60-a1d2-4b4e-a315-04143a85bdfc)
+![image](https://github.com/user-attachments/assets/d137aace-3744-4e89-b45a-7b51f1f15c0a)
 
-##### *En el codigo del dialog de eliminar perfil
+##### En el codigo del dialog de eliminar perfil
 ![image](https://github.com/user-attachments/assets/1d39834c-31b9-46ee-adc3-e03d67316304)
 
 ##### En el codigo muestra que cuando quiera eliminar la cuenta cuenta con 2 botones por tanto tendra que ingresar su contraseña y que este será validado en cuanto este se valide se eliminará.
@@ -36,21 +48,23 @@ En el dashboard se puede notar botones que estan direccionados a hacer ciertas a
 ##### * Enseguida esta el boton de cerrar sesión la cual regresará a el login. 
 ![image](https://github.com/user-attachments/assets/ea90e16d-72f6-4528-9e66-a9d0d36067e7)
 
-### Dashboard
+![image](https://github.com/user-attachments/assets/b51b9c3a-3ed3-4370-9c04-a4149981dab9)
 
-#### En el dashboard se tienen botones los cualesson Editar perfil, Agregar usuario, Agregar peliculas y cerrar sesión.
+### -> Dashboard
+![image](https://github.com/user-attachments/assets/3816bd19-b7cf-486b-b779-7d2290283d3c)
+
+#### En el dashboard se tienen botones los cuales son Editar perfil, Agregar usuario, Agregar peliculas y cerrar sesión.
 ![image](https://github.com/user-attachments/assets/fd3eaada-16e2-4570-9c81-9937694e8d49)
-
+#### * Editar perfil
 ##### En el botón de Editar perfil se realiza por medio de una pantlla que tiene un formulario en la que se muestran los datos como nombre, foto de perfil, etc. 
-
 ![image](https://github.com/user-attachments/assets/a8a040c6-9945-4705-8fd0-8ae98ebae057)
-
 ##### Para que pueda hacer un cambio es necesario que tenga un servicio el cual esta iniciado en el typescript 
-
 ![image](https://github.com/user-attachments/assets/820ede98-f3ed-43b2-981e-861ffbb39d9f)
+![image](https://github.com/user-attachments/assets/69e539ee-3ace-460c-b2b2-3678d2833445)
 
 ##### Asi mismo se contempla que si el usuario quiere cambiar de contraseña este pueda hacerlo, esto se hace medeinte el uso de un nuevo dialog el cual haga la validación de contraseña anterior y activar una nueva contraseña.
 ![image](https://github.com/user-attachments/assets/74d73238-f38a-4fab-821d-d6d2c72d4c3a)
+![image](https://github.com/user-attachments/assets/ade3d935-6966-4093-bdd0-15303f556825)
 
 
 #### El boton de Agregar usuario direcciona a una pantalla en la cual se le piden los datos del nuevo usuario por tanto se ocupa 
