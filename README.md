@@ -9,7 +9,7 @@ En el dashboard se puede notar botones que estan direccionados a hacer ciertas a
 ![image](https://github.com/user-attachments/assets/b511e538-4558-4c05-9720-a9c6d2723ebd)
 ##### El cual es validado con métodos que han sido creados en el typescript 
 ![image](https://github.com/user-attachments/assets/dbe52028-fe65-4edb-892f-dbcd61472611)
-##### dentro dem método se validan los datos entrantes, hace un servicio HTTP en la cual una vez validado y que este registrado ingresara ala pantalla de home o pantalla principal en donde se presentara la información del usuario que inicio sesion, asi mismo los botones que servirán para acer acciones y una tabla en la que se visualizaran las películas.
+##### Dentro de método se validan los datos entrantes, hace un servicio HTTP en la cual una vez validado y que este registrado ingresara ala pantalla de home o pantalla principal en donde se presentara la información del usuario que inicio sesion, asi mismo los botones que servirán para acer acciones y una tabla en la que se visualizaran las películas.
 ### -> Pantalla Login 
 ![image](https://github.com/user-attachments/assets/09d76ce1-cf43-488f-ba56-05b09ad9f314)
 #### Validando usuario
@@ -18,7 +18,8 @@ En el dashboard se puede notar botones que estan direccionados a hacer ciertas a
 #### Una vez validado el usuario se dirige a la pantalla de home
 ![image](https://github.com/user-attachments/assets/10e5336d-3d3f-41de-888e-c05519e07b83)
 
-## Pantalla Principal
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## -> Pantalla Principal
 
 #### Como inicio en la barra superior se muestran 2 datos las cuales son el nombre y su foto de perfil del usuario que ha iniciado sesion. Por tanto en el codigo que ve de la siguiente manera. 
 
@@ -26,6 +27,8 @@ En el dashboard se puede notar botones que estan direccionados a hacer ciertas a
 
 ##### En donde se hacen consultas a la API por medio de un servicio con el cual obtendremos el nombre y la foto de perfil. Además de mencionar que en la foto de perfil se pueden ver ciertas acciones que puede hacer un usuario las cuales son 
 ![image](https://github.com/user-attachments/assets/de8c10d6-f6b8-4096-a49e-1c97698be0f6)
+
+-----------------------------------------------------------------------------------------
 
 #### * Mi perfil la cual tiene funcionalidad ya que en el typescript se realzia un método el cual tiene de nombre mi perfil la cual muestra con un dialog la información del usuario 
 ![image](https://github.com/user-attachments/assets/85ebec4d-6e87-48ea-a3bc-396d6fae861d)
@@ -35,6 +38,7 @@ En el dashboard se puede notar botones que estan direccionados a hacer ciertas a
 ##### En codigo el dialog se realizo de la siguiete manera.
 ![image](https://github.com/user-attachments/assets/c1e2006f-ddc3-4a3e-b232-09117e615ac1)
 
+-----------------------------------------------------------------------------------------
 #### * Eliminar perfil la cuales tiene función en el typescript  
 ![image](https://github.com/user-attachments/assets/bb87fd60-a1d2-4b4e-a315-04143a85bdfc)
 ![image](https://github.com/user-attachments/assets/d137aace-3744-4e89-b45a-7b51f1f15c0a)
@@ -45,16 +49,21 @@ En el dashboard se puede notar botones que estan direccionados a hacer ciertas a
 ##### En el codigo muestra que cuando quiera eliminar la cuenta cuenta con 2 botones por tanto tendra que ingresar su contraseña y que este será validado en cuanto este se valide se eliminará.
 ![image](https://github.com/user-attachments/assets/ac3f3bd8-b947-45ec-929f-b13fb58854e6)
 
+-----------------------------------------------------------------------------------------
+
 ##### * Enseguida esta el boton de cerrar sesión la cual regresará a el login. 
 ![image](https://github.com/user-attachments/assets/ea90e16d-72f6-4528-9e66-a9d0d36067e7)
 
 ![image](https://github.com/user-attachments/assets/b51b9c3a-3ed3-4370-9c04-a4149981dab9)
 
+-----------------------------------------------------------------------------------------
 ### -> Dashboard
 ![image](https://github.com/user-attachments/assets/3816bd19-b7cf-486b-b779-7d2290283d3c)
 
 #### En el dashboard se tienen botones los cuales son Editar perfil, Agregar usuario, Agregar peliculas y cerrar sesión.
 ![image](https://github.com/user-attachments/assets/fd3eaada-16e2-4570-9c81-9937694e8d49)
+
+-------------------------------------------------------------------------------------------
 #### * Editar perfil
 ##### En el botón de Editar perfil se realiza por medio de una pantlla que tiene un formulario en la que se muestran los datos como nombre, foto de perfil, etc. 
 ![image](https://github.com/user-attachments/assets/a8a040c6-9945-4705-8fd0-8ae98ebae057)
@@ -66,30 +75,38 @@ En el dashboard se puede notar botones que estan direccionados a hacer ciertas a
 ![image](https://github.com/user-attachments/assets/74d73238-f38a-4fab-821d-d6d2c72d4c3a)
 ![image](https://github.com/user-attachments/assets/ade3d935-6966-4093-bdd0-15303f556825)
 
-
+----------------------------------------------------------------------------------------
+### * Agregar usuario
 #### El boton de Agregar usuario direcciona a una pantalla en la cual se le piden los datos del nuevo usuario por tanto se ocupa 
 
 ![image](https://github.com/user-attachments/assets/91bbf0b7-e570-4229-9ed2-5f51569a3b94)
-
-
 ##### Una vez recolectado los daos estos se validan  se realiza el servicio HTTP de post sobre la tabla de usuarios.
 ![image](https://github.com/user-attachments/assets/e145428a-48eb-411f-9be7-89df10c136f4)
 
+![image](https://github.com/user-attachments/assets/c820bf8c-ca4a-49c6-b7d4-b99ae991d947)
+
+--------------------------------------------------------------------------------------
+### * Agregar pelicula
+
 #### El botón de Agregar peliculas  lo direccionara a una pantalla la cual tiene el contenido para recolectar los datos correspondientes a la pelicula en el codigo html se definio de la sigueinte manera. 
-
 ![image](https://github.com/user-attachments/assets/72b76501-27e9-43b0-b656-c7f62b0e0815)
-
-
 #### Asi mismo para guardar los datos en la base de datos se requiere de hacer un método que valide los datos que se ingresaron y los guarde en la tabla de pelicula, por tanto en el typescript se hace un metodo el cual hace una peticion o un servicio HTTP el cual hace un post sobre peliculas, 
 
 ![image](https://github.com/user-attachments/assets/72ef2714-f3dc-425f-b081-5b78038a2e63)
 
+![image](https://github.com/user-attachments/assets/bef6f3cc-89c6-420c-8a4f-377bf4fb4355)
 
-### En la pantalla princippal se muestra una tabla la cual contiene los datos reelevantes sobre las peliculas, por tanto en cada registro se hace una consulta get sobre las peliculas almacenadas en la base. 
+------------------------------------------------------------------------------------------
+
+### -> Pantalla principal 
+![image](https://github.com/user-attachments/assets/74d6d1de-0586-4fa9-b45e-26b274948c70)
+
+### En la pantalla principal se muestra una tabla la cual contiene los datos reelevantes sobre las peliculas, por tanto en cada registro se hace una consulta get sobre las peliculas almacenadas en la base. 
 ![image](https://github.com/user-attachments/assets/8315eb97-2764-4f39-a7e9-83f3de411b0c)
+#### En cada uno de los registros se tiene un apartado el cual tiene 3 acciones en especifico
 
+===========================================================================================
 
-#### En cada uno de los registros se tiene un apartado el cual tiene 3 acciones en especifico 
 ##### * Boton de ver información
 
 ##### Cuando se requiere de información sobre una pelicula al dar clic en la acción aparecera un dialog el cual  contendrá la ifnromaci+ón completa de la película en htmml se ve la sigueitne manera.
@@ -97,6 +114,9 @@ En el dashboard se puede notar botones que estan direccionados a hacer ciertas a
 ##### para esto se hace mediante el uso del servicio de obtención de usuario por medio de una ID
 ![image](https://github.com/user-attachments/assets/d18bd7a9-2e9d-4e67-b1fa-81a165b29387)
 
+![image](https://github.com/user-attachments/assets/a4208af5-e17f-4e96-9c1c-4987bc024ac3)
+
+============================================================================================
 ##### * Botón de Eliminar la película 
 ##### Para eliminar una pelicula al dar clic mostrará un dialog el cual moestrara el mensaje de eliminación.
 
@@ -106,16 +126,21 @@ En el dashboard se puede notar botones que estan direccionados a hacer ciertas a
 
 ![image](https://github.com/user-attachments/assets/2ca16f5f-705e-42a5-ab71-6a3b25e6f9ad)
 
+![image](https://github.com/user-attachments/assets/4b8a1ffc-924a-4f41-ae7c-73d827ed26ff)
+
+============================================================================================
 ##### * Botón de Modificar una película 
 
 ##### En el caso de modificar o editar una pelicula cuando se de clic en editar mostrará un html el cual contiene la información de la película y el usuario de clic en el boton de  aceptar o cancelar, siendo asi el html es de la siguiente manera. 
 
 ![image](https://github.com/user-attachments/assets/ad07a0e5-7a72-40e1-90d6-da1233b8ad75)
 
-##### Para validar cuando se editen campos se realizza un método en el typescript el cual hace un servicio sobre la pelicula siendo que se muestre update sobre la tabla de peliculas.
+##### Para validar cuando se editen campos se realiza un método en el typescript el cual hace un servicio sobre la pelicula siendo que se muestre update sobre la tabla de peliculas.
 ![image](https://github.com/user-attachments/assets/c62f71c2-972d-48d6-a34d-89324c177f32)
 
+![image](https://github.com/user-attachments/assets/c35aa2a4-0f1c-44cc-9ce6-204d6cbc3094)
 
+=============================================================================================
 ## Servicios
 #### En el archivo de servicios se realizan los métodos que se mandaran a llamar cuando se requiera de hacer una solicitud.
 #### se realizaron tanto para usuarios como para películas.
@@ -124,14 +149,6 @@ En el dashboard se puede notar botones que estan direccionados a hacer ciertas a
 ##### Elimina un objeto
 
 ####
-
-
-
-
-
-
-
-
 
 
 
