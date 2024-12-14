@@ -143,72 +143,58 @@ En el dashboard se puede notar botones que estan direccionados a hacer ciertas a
 ============================================================================================
 ## Servicios
 #### En el archivo de servicios se realizan los métodos que se mandaran a llamar cuando se requiera de hacer una solicitud.
-#### se realizaron tanto para usuarios como para películas.
+#### Se realizaron tanto para usuarios como para películas.
+### -> Para Usuarios
 
-![image](https://github.com/user-attachments/assets/52c20944-fee0-4d9f-b118-13f84e81df27)
-##### Elimina un objeto
+#### * GET USUARIO 
+![image](https://github.com/user-attachments/assets/127d6886-2637-43af-9fc4-2f945bf788d5)
+##### El método regresa un arreglo de usuarios, este por medio de una solicitud HTTP esto mediante el puerto que se asigno para listen y con ello el nombre de tabla con la cual se trabajará.
 
-####
+#### * UPDATE USUARIO
+![image](https://github.com/user-attachments/assets/e821d4dc-27ba-4ca2-aab1-9dcdf4cbce44)
+##### El método permite hacer una modificación sobre un objeto o elemento de la api de usuarios al cual a la consulta se pasa el ID  y este hace uso de PUT para modificar el dato. 
+
+#### * POST USUARIO 
+![image](https://github.com/user-attachments/assets/5d2a3f2a-977f-4b4f-9095-b4be1517b09b)
+##### En este método se aplica el uso de POST el cual permite ingresar un elelemtno nuevo o un nuevo usuario, por tanto se le asigna a la api de usuarios y se le pasan los datos.
+
+#### * DELETE USUARIO
+![image](https://github.com/user-attachments/assets/8419707b-6884-4df5-a494-3835404de2ab)
+##### Para la eliminación de un elemento o de un usuario en este caso se hace uso de delete al cual se le manda como dato un ID.
+
+### -> Para Películas
+
+#### * GET PELICULA
+![image](https://github.com/user-attachments/assets/80cafe0f-8af5-47fe-a392-8aeee9aac46a)
+##### El método se aplica para la recuperación del arreglo de las peliculas que estan en la api.
+
+#### * GET PELÍCULA POR ID
+![image](https://github.com/user-attachments/assets/994e81a1-e74b-4639-86ed-bc0d883e7700)
+##### Obtiene la pelicula por la solicitud put en la api de películas.
+
+#### * UPDATE PELÍCULA 
+![image](https://github.com/user-attachments/assets/60df0fef-fe91-4749-b42a-f722d743418f)
+
+##### El método aplica los cambios sobre un id en especifico sobre la api de peliculas.
+
+#### * POST PELÍCULA 
+![image](https://github.com/user-attachments/assets/4df5141e-f913-4c50-a237-59c368bb7f00)
+##### Agrega una película a la api de peliculas, agrega todos los datos  de la película. 
+
+#### * DELETE PELÍCULA
+![image](https://github.com/user-attachments/assets/b7fdcf1a-e02a-4222-a339-51ce7949cc61)
+##### Se elimina una pelicula del almacenamiento de la api de películas, este lo hace mediante la especificación de un id.
+
+#### * BUSCAR PELÍCULAS
+![image](https://github.com/user-attachments/assets/f911012a-803b-45c8-ac8e-33b9e7581549)
+##### Se buscan peliculas por medio del nombre en la api, la cual se recibe como parámetro.
+
+
+#### * PELICULAS PAGINADAS
+![image](https://github.com/user-attachments/assets/3c759a1e-69a8-4948-aa2e-01a9c551b626)
+##### Para mostrar elementos en una tabla, para tener un orden se muestra con una cantidad de elementos o peliculas y si hay mas elementos que mostrar estos se paginen, por lo cual este requiere hacer una consulta a la api en la que se reciban como parámetros la pagina y el tamaño.
 
 
 
 
-# Cartelera
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.3.
-
-## Development server
-
-To start a local development server, run:
-
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
